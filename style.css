@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap');
+
+body {
+    background-color: #0d1117; /* Fondo oscuro estilo GitHub/MCTiers */
+    color: #c9d1d9;
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #30363d;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    margin: 0;
+    color: #e6edf3;
+    font-weight: 900;
+}
+
+select {
+    background-color: #21262d;
+    color: #c9d1d9;
+    border: 1px solid #30363d;
+    padding: 8px 12px;
+    border-radius: 6px;
+    outline: none;
+    cursor: pointer;
+}
+
+/* Estilo de cada fila de jugador */
+.player-row {
+    display: flex;
+    align-items: center;
+    background-color: #161b22;
+    border: 1px solid #30363d;
+    border-radius: 8px;
+    padding: 12px 20px;
+    margin-bottom: 10px;
+    transition: transform 0.2s;
+}
+
+.player-row:hover {
+    background-color: #21262d;
+    transform: scale(1.01);
+}
+
+.rank {
+    font-size: 24px;
+    font-weight: 900;
+    color: #8b949e;
+    width: 40px;
+    font-style: italic;
+}
+
+/* Colores para el Top 3 */
+.rank-1 { color: #ffd700; }
+.rank-2 { color: #c0c0c0; }
+.rank-3 { color: #cd7f32; }
+
+.avatar {
+    width: 48px;
+    height: 48px;
+    border-radius: 8px; /* Cuadrado con bordes suaves */
+    object-fit: cover;
+    margin-right: 15px;
+}
+
+.player-info {
+    flex: 1;
+}
+
+.player-name {
+    font-size: 18px;
+    font-weight: 700;
+    color: #e6edf3;
+    margin: 0 0 4px 0;
+}
+
+.player-points {
+    font-size: 13px;
+    color: #8b949e;
+    margin: 0;
+}
+
+/* Contenedor de los iconos de minijuegos */
+.badges-container {
+    display: grid;
+    grid-template-columns: repeat(8, 32px);
+    gap: 8px;
+    justify-content: end;
+}
+
+.badge {
+    width: 32px;
+    height: 32px;
+    border-radius: 4px;
+    background-color: #0d1117;
+    border: 1px solid #30363d;
+    padding: 2px;
+    cursor: help; /* Cursor de interrogación al pasar el ratón */
+}
+
+.badge:hover {
+    border-color: #58a6ff;
+}
