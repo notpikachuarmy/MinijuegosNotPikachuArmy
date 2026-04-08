@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ranking de Minijuegos</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>🏆 Ranking de Minijuegos</h1>
+            <div class="controls">
+                <label for="sortSelect">Ordenar por:</label>
+                <select id="sortSelect">
+                    <option value="global">Puntuación Global</option>
+                    </select>
+            </div>
+        </header>
+
+        <main id="leaderboard">
+            <p class="loading">Cargando datos...</p>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
